@@ -31,6 +31,7 @@
   position: absolute;
   background: #fff;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   top: 0;
@@ -46,4 +47,14 @@
   background: rgba(0, 0, 0, 0.486);
   top: 0;
   left: 0;
+}
+
+.nav-box .nav-link {
+  text-decoration: none;
+  color: black;
+  font-size: 22px;
+}
+
+.nav-box .nav-link-container {
+  margin: 10px 0;
 }

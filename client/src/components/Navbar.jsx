@@ -13,8 +13,8 @@ const Navbar = () => {
     const toggleNav = () => {
         setNavBoxBool(!navBoxBool)
         if(navBoxBool === true){
-            setNavBox(<NavBox />)
-            setBackdrop(<Backdrop setBackdrop={setBackdrop} setNavBox={setNavBox} setNavBoxBool={setNavBoxBool}  />)
+            setNavBox(<NavBox setBackdrop={setBackdrop} setNavBox={setNavBox} setNavBoxBool={setNavBoxBool} />)
+            setBackdrop(<Backdrop setBackdrop={setBackdrop} setNavBox={setNavBox} setNavBoxBool={setNavBoxBool} />)
         }
         else{
             setNavBox("")
