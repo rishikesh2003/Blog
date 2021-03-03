@@ -1,9 +1,11 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const dotenv = require("dotenv").config();
+const cors = require("cors");
 
 const app = express();
 app.use(express.json());
+app.use(cors());
 
 const emailRouter = require("./Routes/EmailRoute");
 app.use("/api/emails", emailRouter);
