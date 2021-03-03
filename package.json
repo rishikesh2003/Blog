@@ -4,13 +4,13 @@
   "description": "this is a personal blog",
   "main": "server.js",
   "scripts": {
-    "server" : "nodemon server.js"
+    "server": "nodemon server.js"
   },
   "author": "Rishikesh",
   "license": "MIT",
   "dependencies": {
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
-    "mongoose": "^5.11.18"
+    "mongoose": "^5.11.15"
   }
 }
