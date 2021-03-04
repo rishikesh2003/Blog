@@ -3,25 +3,18 @@ import { Link } from "react-router-dom";
 
 const NavBox = (props) => {
   const navLinkObj = [
-    {
-      name: "Home",
-      to: "/",
-    },
-    {
-      name: "Topics",
-      to: "/topics",
-    },
-    {
-      name: "Contact",
-      to: "/contact",
-    },
+    { id: 1, name: "Home", to: "/", color: "black" },
+    { id: 2, name: "Topics", to: "/topics", color: "black" },
+    { id: 3, name: "Subscribe", to: "/subscribe", color: "blue" },
+    { id: 4, name: "Contact", to: "/contact", color: "black" },
   ];
   return (
     <div className="nav-box">
       {navLinkObj.map((item) => {
         return (
-          <div className="nav-link-container">
+          <div key={item.id} className="nav-link-container">
             <Link
+              style={{ color: item.color }}
               className="nav-link"
               onClick={() => {
                 props.setBackdrop("");
